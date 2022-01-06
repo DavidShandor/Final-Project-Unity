@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "R58M76TAAEM",
+    "m_SelectedDeviceId": "RFCR816MBFT",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "RFCR816MBFT",
+        "name": "com.DavidandElchanan.PipesinaWall",
+        "processId": 19629,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -18,6 +18,30 @@
             "deviceId": "R58M76TAAEM",
             "name": "com.sec.android.app.launcher",
             "processId": 5010,
+            "exited": false
+        },
+        {
+            "deviceId": "RFCR816MBFT",
+            "name": "com.sec.android.app.launcher",
+            "processId": 17526,
+            "exited": false
+        },
+        {
+            "deviceId": "RFCR816MBFT",
+            "name": "com.DavidandElchanan.PipesinaWall",
+            "processId": 11503,
+            "exited": false
+        },
+        {
+            "deviceId": "RFCR816MBFT",
+            "name": "com.DavidandElchanan.PipesinaWall",
+            "processId": 15192,
+            "exited": false
+        },
+        {
+            "deviceId": "RFCR816MBFT",
+            "name": "com.DavidandElchanan.PipesinaWall",
+            "processId": 19629,
             "exited": false
         }
     ],
