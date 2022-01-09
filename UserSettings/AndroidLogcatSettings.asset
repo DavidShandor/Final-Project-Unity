@@ -1,5 +1,5 @@
 {
-    "m_SelectedDeviceId": "R58M76TAAEM",
+    "m_SelectedDeviceId": "192.168.1.102:5555",
     "m_SelectedPackage": {
         "deviceId": "",
         "name": "",
@@ -19,6 +19,30 @@
             "name": "com.sec.android.app.launcher",
             "processId": 5010,
             "exited": false
+        },
+        {
+            "deviceId": "R58M76TAAEM",
+            "name": "com.DavidandElchanan.PipesinaWall",
+            "processId": 23196,
+            "exited": false
+        },
+        {
+            "deviceId": "R58M76TAAEM",
+            "name": "com.DavidandElchanan.PipesinaWall",
+            "processId": 26890,
+            "exited": false
+        },
+        {
+            "deviceId": "192.168.1.102:5555",
+            "name": "com.DavidandElchanan.PipesinaWall",
+            "processId": 4099,
+            "exited": true
+        },
+        {
+            "deviceId": "192.168.1.102:5555",
+            "name": "com.sec.android.app.launcher",
+            "processId": 5010,
+            "exited": false
         }
     ],
     "m_Tags": {
@@ -29,7 +53,7 @@
             },
             {
                 "m_Name": "No Filter",
-                "m_Selected": true
+                "m_Selected": false
             },
             {
                 "m_Name": "",
@@ -45,7 +69,7 @@
             },
             {
                 "m_Name": "Unity",
-                "m_Selected": false
+                "m_Selected": true
             },
             {
                 "m_Name": "CRASH",

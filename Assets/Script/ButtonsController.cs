@@ -9,7 +9,7 @@ using UnityEngine.XR.ARSubsystems;
 
 public class ButtonsController : MonoBehaviour
 {
-
+    //Declare events, Gameobjects and text. 
     public event Action OnSavePress;
     public event Action OnLoadPress;
     public event Action OnDoorPress;
@@ -19,11 +19,13 @@ public class ButtonsController : MonoBehaviour
 
     [SerializeField] private TMPro.TextMeshProUGUI MainText;
 
-    private ARTapToPlaceObject arTap;
-  
+    private ARSessionController ARController;
 
+    // This Function Called when the script is enable by the application.
     private void OnEnable()
     {
+        // Set listenners to the events from the user,
+        // and send the proper message to the AR Session Controller 
         SaveBTM.onClick.AddListener(OnSavePress.Invoke);
         LoadBTM.onClick.AddListener(OnLoadPress.Invoke);
         PlaceBTM.onClick.AddListener(OnPlacePress.Invoke);
@@ -34,30 +36,35 @@ public class ButtonsController : MonoBehaviour
             OnDoorPress.Invoke();
         }); 
      
+        // Set main text
         SetMainText("Find the Door");
 
-        arTap = FindObjectOfType<ARTapToPlaceObject>();
+        // Get The AR Session Controller object's reference.
+        ARController = FindObjectOfType<ARSessionController>();
 
-        arTap.OnChangeText += SetMainText;
+        // Set an event listenners to the AR Session Controller event's messages. 
+        ARController.OnChangeText += SetMainText;
 
     }
 
+    // Set the Main text on the screen
    private void SetMainText(string str)
    {
         MainText.text = str;
    }
-    
 
 
+    // This function called with the script disable by the application.
     private void OnDisable()
     {
         Debug.Log("Disable!");
 
-        arTap.OnChangeText -= SetMainText;
+        // Remove the listenner.
+        ARController.OnChangeText -= SetMainText;
 
     }
 
-
+    // Hide or Show the buttons on the screen.
     public void SetButtons(bool flag)
     {
         SaveBTM.gameObject.SetActive(flag);
